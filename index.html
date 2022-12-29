@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Gavaz Image Resizer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="left-side">
+        <img src="./img/meme.png">
+        </div>
+    <div class="header_container">
+        <h1 class="nofill h1">Resize Your</h1>
+        <h1 class="fill h1">Images</h1>
+        <div class="selector" style="display:flex; align-content:center;justify-content:center;margin-top: 50px;">
+            <label for="intensity" style="margin-bottom:7px">Intensity: &nbsp;</label>
+            <input type="range" id="intensity" name="intensity" min="0" max="2" value="1" step="1" />
+
+        </div>
+        <div class="btn_container">
+            <form id="my-form" action="" method="post" r>
+                <label for="file" class="btn"><i class="fa-solid fa-plus"></i>&nbsp;Select Image</label>
+                <input type="file" accept="image/*" id="file" name="photo">
+            </form>
+        </div>
+            <img id="img-preview" style="width:fit-content;height: fit-content;">
+    </div>
+    <script src="js/script.js" async defer></script>
+</body>
+
+</html>
